@@ -1,0 +1,51 @@
+/* Bütün sayta tətbiq olunur */
+body {
+    background-color: #f4f4f4; /* Açıq boz arxa fon */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Şrifti dəyişirik */
+    color: #333; /* Əsas yazı rəngi */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Yuxarıdakı menyu (header) */
+header {
+    background-color: #007bff; /* Mavi rəng */
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Naviqasiya linkləri */
+header a {
+    color: white; /* Yazı rəngi ağ */
+    text-decoration: none; /* Alt xətti götürürük */
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* Başlıq rəngi */
+h1 {
+    color: #333; /* Tünd boz */
+}
+
+/* Şəkil stili */
+img {
+    border: 5px solid #007bff; /* Şəkil ətrafına mavi çərçivə */
+    border-radius: 50%; /* Şəkli dairəvi edirik */
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Footer stili */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
