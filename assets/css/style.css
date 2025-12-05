@@ -49,3 +49,115 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* --- İKONLAR VƏ LAYİHƏLƏR ÜÇÜN ƏLAVƏ STİLLƏR --- */
+
+/* Əlavə: Layihə təsvirlərini mərkəzə gətirmək üçün */
+.project-item {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Əlavə: İkonlar üçün konteyner */
+.social-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-icons a {
+    color: #007bff;
+    font-size: 24px;
+    margin: 0 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.social-icons span {
+    font-size: 16px;
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+/* --- RESPONSIVE DESIGN (Media Queries) --- */
+
+@media (max-width: 600px) {
+    /* 1. Header və Naviqasiyanın Düzəldilməsi */
+    header {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+        padding: 8px 15px;
+        width: 100%; 
+        box-sizing: border-box;
+    }
+
+    /* 2. Əsas Səhifə Məzmunu və Şəkillərin Düzəldilməsi */
+    main section {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em; 
+    }
+
+    /* Şəkillərin Mobil Uyğunlaşdırılması */
+    main img {
+        max-width: 90%; 
+        height: auto;
+        margin: 20px auto;
+        display: block;
+    }
+
+    /* İkonları mərkəzə gətirmək */
+    .social-icons {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 10px; 
+    }
+
+    .social-icons a {
+        padding: 10px 0;
+        width: 80%; 
+        text-align: center;
+        border: 1px solid #ccc; 
+        border-radius: 5px;
+    }
+
+    /* Layihə Şəkillərini və Mətnini Mobilə Uyğunlaşdırmaq */
+    .project-item {
+        padding: 15px;
+    }
+
+    .project-images {
+        display: flex; /* Flexbox əlavə etdik */
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .project-images img {
+        width: 80%; 
+        margin: 10px 0;
+        border-radius: 5%; /* Dairəvi yox, azca yumruq olsun */
+    }
+
+    /* Footer-ın Düzəldilməsi */
+    footer {
+        position: static; /* Mobil telefonda footer-ı yuxarı çəkirik */
+        width: 100%;
+        padding: 15px 0;
+    }
+    footer p {
+        text-align: center;
+    }
+}
