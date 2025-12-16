@@ -1,65 +1,65 @@
-x/* Bütün sayta tətbiq olunur */
+/* Bütün sayta tətbiq olunur */
 body {
-    background-color: #f4f4f4; /* Açıq boz arxa fon */
-    font-family: 'Helvetica Neue', Arial, sans-serif; /* Şrifti dəyişirik */
-    color: #333; /* Əsas yazı rəngi */
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+    background-color: #f4f4f4; /* Açıq boz arxa fon */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Şrifti dəyişirik */
+    color: #333; /* Əsas yazı rəngi */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
 /* Yuxarıdakı menyu (header) */
 header {
-    background-color: #007bff; /* Mavi rəng */
-    padding: 15px 0;
-    text-align: center;
+    background-color: #007bff; /* Mavi rəng */
+    padding: 15px 0;
+    text-align: center;
 }
 
 /* Naviqasiya linkləri */
 header a {
-    color: white; /* Yazı rəngi ağ */
-    text-decoration: none; /* Alt xətti götürürük */
-    margin: 0 15px;
-    font-weight: bold;
+    color: white; /* Yazı rəngi ağ */
+    text-decoration: none; /* Alt xətti götürürük */
+    margin: 0 15px;
+    font-weight: bold;
 }
 
 /* Başlıq rəngi */
 h1 {
-    color: #333; /* Tünd boz */
+    color: #333; /* Tünd boz */
 }
 
-/* Şəkil stili (Orijinal: Dairəvi və Mavi Çərçivə) */
+/* Şəkil stili (Bütün əsas şəkillər DAİRƏVİ qalır) */
 img {
-    border: 5px solid #007bff; /* Şəkil ətrafına mavi çərçivə */
-    border-radius: 50%; /* Şəkli dairəvi edirik */
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    display: block;
-    margin: 20px auto;
+    border: 5px solid #007bff; /* Şəkil ətrafına mavi çərçivə */
+    border-radius: 50%; /* Şəkli DAİRƏVİ edirik */
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
 }
 
-/* Footer stili (Orijinal: Fixed) */
+/* Footer stili (Fixed) */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 /* --- İKONLAR VƏ LAYİHƏLƏR ÜÇÜN ƏLAVƏ STİLLƏR --- */
 
 /* Əlavə: Layihə təsvirlərini mərkəzə gətirmək üçün */
 .project-item {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
 }
 
-/* YENİ KOD: Şəkillərin yan-yana düzülməsi (Böyük Ekran) */
+/* YENİ KOD: Projects səhifəsindəki şəkillərin YAN-YANA düzülməsi (Böyük Ekran) */
 .project-images {
     display: flex;         /* Yan-yana düzülməni təmin edir */
     justify-content: center; /* Şəkillər qrupunu mərkəzdə yerləşdirmək üçün */
@@ -69,14 +69,14 @@ footer {
 }
 
 .project-images img {
-    /* Bu, global 'img' stilini override edir ki, yan-yana düzülə bilsinlər, lakin dairəvi qalırlar */
+    /* Bu stillər yan-yana düzülməsi üçün təkrar qoyulur, lakin dairəvi xüsusiyyəti global 'img' stilindən gəlir */
     width: 200px;         
     height: 200px;        
     margin: 0;            
     display: block;
 }
 
-/* Əlavə: Layihə Linkləri üçün stili (Daha yaxşı görünüş üçün əlavə edilib) */
+/* Əlavə: Layihə Linkləri üçün stili */
 .project-link {
     display: block;
     margin: 10px auto;
@@ -89,100 +89,100 @@ footer {
 
 /* Əlavə: İkonlar üçün konteyner */
 .social-icons {
-    text-align: center;
-    margin: 20px 0;
+    text-align: center;
+    margin: 20px 0;
 }
 
 .social-icons a {
-    color: #007bff;
-    font-size: 24px;
-    margin: 0 15px;
-    text-decoration: none;
-    display: inline-block;
+    color: #007bff;
+    font-size: 24px;
+    margin: 0 15px;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .social-icons span {
-    font-size: 16px;
-    font-weight: normal;
-    margin-left: 5px;
+    font-size: 16px;
+    font-weight: normal;
+    margin-left: 5px;
 }
 
 /* --- RESPONSIVE DESIGN (Media Queries) --- */
 
 @media (max-width: 600px) {
-    /* 1. Header və Naviqasiyanın Düzəldilməsi */
-    header {
-        padding: 10px 0;
-        text-align: center;
-    }
+    /* 1. Header və Naviqasiyanın Düzəldilməsi */
+    header {
+        padding: 10px 0;
+        text-align: center;
+    }
 
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    nav {
+        display: flex;
+        flex-direction: column; /* Stacks links vertically [cite: 167] */
+        align-items: center;
+    }
 
-    nav a {
-        margin: 5px 0;
-        padding: 8px 15px;
-        width: 100%; 
-        box-sizing: border-box;
-    }
+    nav a {
+        margin: 5px 0;
+        padding: 8px 15px;
+        width: 100%; [cite: 173]
+        box-sizing: border-box;
+    }
 
-    /* 2. Əsas Səhifə Məzmunu və Şəkillərin Düzəldilməsi */
-    main section {
-        padding: 20px;
-    }
+    /* 2. Əsas Səhifə Məzmunu və Şəkillərin Düzəldilməsi */
+    main section {
+        padding: 20px;
+    }
 
-    h1 {
-        font-size: 2em; 
-    }
+    h1 {
+        font-size: 2em; 
+    }
 
-    /* Şəkillərin Mobil Uyğunlaşdırılması */
-    main img {
-        max-width: 90%; 
-        height: auto;
-        margin: 20px auto;
-        display: block;
-    }
+    /* Şəkillərin Mobil Uyğunlaşdırılması */
+    main img {
+        max-width: 90%; [cite: 178]
+        height: auto; [cite: 179]
+        margin: 20px auto;
+        display: block;
+    }
 
-    /* İkonları mərkəzə gətirmək */
-    .social-icons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px; 
-    }
+    /* İkonları mərkəzə gətirmək */
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+    }
 
-    .social-icons a {
-        padding: 10px 0;
-        width: 80%; 
-        text-align: center;
-        border: 1px solid #ccc; 
-        border-radius: 5px;
-    }
+    .social-icons a {
+        padding: 10px 0;
+        width: 80%; 
+        text-align: center;
+        border: 1px solid #ccc; 
+        border-radius: 5px;
+    }
 
-    /* Project Şəkilləri Mobil Versiyada Alt-Alta Düzülür (Dairəvi qalır) */
-    .project-images {
-        display: flex; 
-        flex-direction: column;
-        align-items: center;
-    }
+    /* Project Şəkilləri Mobil Versiyada ALT-ALTA Düzülür (və Dairəvi qalır) */
+    .project-images {
+        display: flex; 
+        flex-direction: column; [cite: 184]
+        align-items: center;
+    }
 
-    .project-images img {
-        width: 80%;
-        height: auto;
-        border-radius: 50%; /* Dairəvi saxlanılır */
-        margin: 10px 0;
-    }
+    .project-images img {
+        width: 80%;
+        height: auto;
+        border-radius: 50%; /* Dairəvi saxlanılır */
+        margin: 10px 0;
+    }
 
-    /* Footer-ın Düzəldilməsi */
-    footer {
-        position: static; /* Mobil telefonda footer-ı yuxarı çəkirik*/
-        width: 100%;
-        padding: 15px 0;
-    }
-    footer p {
-        text-align: center;
-    }
+    /* Footer-ın Düzəldilməsi */
+    footer {
+        position: static; /* Mobil telefonda footer-ı yuxarı çəkirik [cite: 193]*/
+        width: 100%;
+        padding: 15px 0;
+    }
+    footer p {
+        text-align: center;
+    }
 }
