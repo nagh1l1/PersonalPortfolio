@@ -1,23 +1,4 @@
-# AI Chat Log – SITE1101 Portfolio Project
 
-This file documents the interaction with AI tools during the development of the personal portfolio website.
-
-## Topics discussed
-- Creating a static portfolio website using HTML, CSS, and JavaScript
-- Structuring files for a university assignment
-- Designing responsive layouts
-- Updating content for Home, About, Projects
-- Applying a white-themed design
-- Fixing layout issues (footer, spacing, images)
-- Using Git, GitHub, and GitHub Pages
-
-## Purpose
-The AI assistant was used as a learning and guidance tool to help understand front-end development concepts and complete the assignment requirements.
-
-## Student
-Ruhay Naghili
-ADA University  
-SITE1101 – Individual Project
 Excellent offer! Yes, clearing up all the confusion and starting from scratch, but in a more organized way, is the most correct decision. This way, you will both get used to it, and all files will be in their proper place.
 I will explain everything you need step by step in simple language. We will work based on the project instructions (the PDF file you sent).
 🔄 Part 1: Cleanup and New Beginning
@@ -2986,5 +2967,4 @@ Final Checklist Before Submission:
 •	Responsive design CSS is active.
 Conclusion: Your project is ready for submission. There are no remaining errors that would deduct points. You have successfully built a complete, professional portfolio website. Congratulations! 🎉
 Good luck with your submission!
-
 
